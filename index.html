@@ -50,7 +50,7 @@
                          + "&body=" + escape(document.getElementById('comments').value)
                 ;
 
-                window.location.href = link;
+                setTimeout(() => window.location.href = link, 3000);
             }
         </script>
 
@@ -74,7 +74,7 @@
         <nav class="navbar navbar-expand-lg fixed-top custom-nav sticky">
             <div class="container">
                 <!-- LOGO -->
-                <p class="navbar-brand mr-0 mb-0"><img src="images/name.png"><p>
+                <p class="navbar-brand mr-0 mb-0"><a href="#" class="nav-link"><img src="images/name.png"></a><p>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="mdi mdi-menu"></i>
@@ -167,17 +167,17 @@
                             </div>
                             <div class="skills">
                                   <div>Python</div>
-                                  <div>Java</div>
+                                  <div>SQL</div>
                                   <div>R</div>
+                                  <div>Java</div>
                             </div>
                             <div class="clearfix">
-                                <div class="text-dark font-weight-bold float-left">Databases</div>
+                                <div class="text-dark font-weight-bold float-left">Big Data</div>
                             </div>
                             <div class="skills">
-                                  <div>MySQL</div>
-                                  <div>NoSQL</div>
-                                  <div>MS Access</div>
-                                  <div>RDBMS</div>
+                                <div>Map Reduce</div>
+                                <div>Spark</div>
+                                <div>Hadoop</div>
                             </div>
                             <div class="clearfix">
                                 <div class="text-dark font-weight-bold float-left">Development Tools</div>
@@ -199,6 +199,7 @@
                                   <div>TensorFlow</div>
                                   <div>keras</div>
                                   <div>scikit-learn</div>
+                                  <div>CUDA</div>
                             </div>
                             <div class="clearfix">
                                 <div class="text-dark font-weight-bold float-left">Web Development</div>
@@ -211,11 +212,13 @@
                                 <div>Bootstrap 4</div>
                             </div>
                             <div class="clearfix">
-                                <div class="text-dark font-weight-bold float-left">Big Data</div>
+                                <div class="text-dark font-weight-bold float-left">Databases</div>
                             </div>
                             <div class="skills">
-                                <div>Map Reduce</div>
-                                <div>Spark</div>
+                                <div>MySQL</div>
+                                <div>NoSQL</div>
+                                <div>MS Access</div>
+                                <div>PostgreSQL</div>
                             </div>
                         </div>
                     </div>
@@ -395,13 +398,37 @@
                 <div class="row mt-5">
                     <div class="col-lg-12">
                         <ul class="text-center list-unstyled list-inline mb-0 text-capitlize work_menu" id="menu-filter">
-                            <li class="list-inline-item"><a class="active" data-filter=".ml">Machine Learning</a></li>
+                            <li class="list-inline-item"><a class="" data-filter=".ml">Machine Learning</a></li>
                             <li class="list-inline-item"><a class="" data-filter=".bd">Big Data</a></li>
                             <li class="list-inline-item"><a class="" data-filter=".wd">Web Development</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="row mt-5 work-filter">
+                    <div class="col-lg-4 ml">
+                        <div class="work_img_box rounded">
+                            <a class="img-zoom" href="#project_description11"></a>
+                            <div class="work_images">
+                                <div class="lan_box_ser text-center rounded p-4 mt-3">
+                                    <div class="service-content mt-4">
+                                        <h5 class="font-weight-bold">Plutus – Budgeting app</h5>
+                                        <p class="mt-3 text-muted mb-0">10/2019 @HackGT6</p>
+                                        <p class="mt-3 text-muted mb-0"><b>Technical Stack</b> - Python, Flask, Google Cloud, Speech to Text, Entity Analysis, Word2Vec, PyCharm<br><br></p>
+                                    </div>
+                                </div>
+                                <div class="work_overlay">
+                                    <h6 class="mb-0 text_justify">The aim of this project is create a budgeting app where users can update their expenses using voice</h6>
+                                </div>
+                            </div>
+                            <div id="project_description11" class="white-popup mfp-hide">
+                                <h4>Plutus – Budgeting app</h4>
+                                <p><b>Dates:</b> October 2019 @HackGT6</p>
+                                <p><b>Description:</b> Plutus runs our voice assistant, Jade. By providing Jade with vocal input of your spending, Plutus automatically categorizes the input, presents how you are maintaining your goals, and visually models the data to offer an easy-to-digest graphical understanding of your finances.</p>
+                                <p><b>Technical Stack:</b> - Python, Flask, Google Cloud, Speech to Text, Entity Analysis, Word2Vec, PyCharm</p>
+                                <p><b>GitHub:</b> <a href="https://github.com/maddineniakhil/Machine-Learning/tree/master/Speech%20Analysis" target="_blank">Repository</a> </p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-lg-4 ml">
                         <div class="work_img_box rounded">
                             <a class="img-zoom" href="#project_description1"></a>
@@ -414,7 +441,7 @@
                                     </div>
                                 </div>
                                 <div class="work_overlay">
-                                    <h6 class="mb-0 text_justify">The aim of this project is to predict the parameters of the strains of pseudomonas aeruginosa and thereby classify them as drug resistant to the two drugs(β-lactam, fluoroquinolones), based on the image of the culture after it is exposed to the drugs</h6>
+                                    <h6 class="mb-0 text_justify">The aim of this project is to predict the parameters of a bacteria and thereby classify them as drug resistant or not</h6>
                                 </div>
                             </div>
                             <div id="project_description1" class="white-popup mfp-hide">
@@ -422,7 +449,7 @@
                                 <p><b>Dates:</b> September 2018 – November 2018</p>
                                 <p><b>Description:</b> The aim of this project is to predict the parameters of the strains of pseudomonas aeruginosa and thereby classify them as drug resistant to the two drugs(β-lactam, fluoroquinolones), based on the image of the culture after it is exposed to the drugs</p>
                                 <p><b>Technical Stack:</b> - Python, TensorFlow, pandas, keras, PyCharm</p>
-                                <p><b>GitHub:</b> <a href="">Repository</a> </p>
+                                <p><b>GitHub:</b> <a href="https://github.com/maddineniakhil/Machine-Learning/tree/master/Classification%20of%20Bacterial%20Strains%20as%20Drug%20Resistant" target="_blank">Repository</a> </p>
                             </div>
 
                         </div>
@@ -439,7 +466,7 @@
                                     </div>
                                 </div>
                                 <div class="work_overlay">
-                                    <h6>Emotional analysis deals with identifying and classifying opinions or sentiments expressed in source text which is very useful in knowing the opinion of the crowd. Data Mining algorithms are used for analyzing sentiments from the tweet.</h6>
+                                    <h6>Emotional analysis deals with identifying and classifying opinions or sentiments from tweets</h6>
                                 </div>
                             </div>
                             <div id="project_description2" class="white-popup mfp-hide">
@@ -447,7 +474,7 @@
                                 <p><b>Dates:</b> September 2018 – November 2018</p>
                                 <p><b>Description:</b> Emotional analysis deals with identifying and classifying opinions or sentiments expressed in source text which is very useful in knowing the opinion of the crowd. Data Mining algorithms are used for analyzing sentiments from the tweet.</p>
                                 <p><b>Technical Stack:</b> - Python, scikit-learn, pandas, PyCharm</p>
-                                <p><b>GitHub:</b> <a href="">Repository</a> </p>
+                                <p><b>GitHub:</b> <a href="https://github.com/maddineniakhil/Machine-Learning/tree/master/Emotional%20Analysis%20of%20Twitter%20Users%20using%20NLP" target="_blank">Repository</a> </p>
                             </div>
                         </div>
                     </div>
@@ -463,7 +490,7 @@
                                     </div>
                                 </div>
                                 <div class="work_overlay">
-                                    <h6>The purpose of this project is to develop a Data Acquisition and Control system that translates the sign language into text that can be read by anyone. For the purpose of this research work, we used the American Sign Language (ASL).</h6>
+                                    <h6>The purpose of this project is to develop a system that translates the sign language into text</h6>
                                 </div>
                             </div>
                             <div id="project_description3" class="white-popup mfp-hide">
@@ -471,7 +498,6 @@
                                 <p><b>Dates:</b> August 2015 – October 2015</p>
                                 <p><b>Description:</b> The purpose of this project is to develop a Data Acquisition and Control system that translates the sign language into text that can be read by anyone. For the purpose of this research work, we used the American Sign Language (ASL).</p>
                                 <p><b>Technical Stack:</b> - OpenCV, Python, Tkinter</p>
-                                <p><b>GitHub:</b> <a href="">Repository</a> </p>
                             </div>
                         </div>
                     </div>
@@ -495,34 +521,34 @@
                                 <p><b>Dates:</b> September 2019 – November 2019</p>
                                 <p><b>Description:</b> The aim of this project is to develop a model to automatically predict age and gender from unfiltered faces of humans</p>
                                 <p><b>Technical Stack:</b> - Python, TensorFlow, OpenCV, PyCharm</p>
-                                <p><b>GitHub:</b> <a href="">Repository</a> </p>
+<!--                                <p><b>GitHub:</b> <a href="">Repository</a> </p>-->
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 ml">
-                        <div class="work_img_box rounded">
-                            <a class="img-zoom" href="#project_description5"></a>
-                            <div class="work_images">
-                                <div class="lan_box_ser text-center rounded p-4 mt-3">
-                                    <div class="service-content mt-4">
-                                        <h5 class="font-weight-bold">Serve prediction for Multiple players in Tennis</h5>
-                                        <p class="mt-3 text-muted mb-0">08/2019 – Present</p>
-                                        <p class="mt-3 text-muted mb-0"><b>Technical Stack</b> - Python, TensorFlow, pandas, PyCharm<br><br></p>
-                                    </div>
-                                </div>
-                                <div class="work_overlay">
-                                    <h6>The aim of this project is to develop analyze serve pattern of a tennis player in different situations and predict the next serve of that player in real-time</h6>
-                                </div>
-                            </div>
-                            <div id="project_description5" class="white-popup mfp-hide">
-                                <h4>Serve prediction for Multiple players in Tennis</h4>
-                                <p><b>Dates:</b> August 2019 – Present</p>
-                                <p><b>Description:</b> The aim of this project is to develop analyze serve pattern of a tennis player in different situations and predict the next serve of that player in real-time</p>
-                                <p><b>Technical Stack:</b> - Python, TensorFlow, pandas, PyCharm</p>
-                                <p><b>GitHub:</b> <a href="">Repository</a> </p>
-                            </div>
-                        </div>
-                    </div>
+<!--                    <div class="col-lg-4 ml">-->
+<!--                        <div class="work_img_box rounded">-->
+<!--                            <a class="img-zoom" href="#project_description5"></a>-->
+<!--                            <div class="work_images">-->
+<!--                                <div class="lan_box_ser text-center rounded p-4 mt-3">-->
+<!--                                    <div class="service-content mt-4">-->
+<!--                                        <h5 class="font-weight-bold">Serve prediction for Multiple players in Tennis</h5>-->
+<!--                                        <p class="mt-3 text-muted mb-0">08/2019 – Present</p>-->
+<!--                                        <p class="mt-3 text-muted mb-0"><b>Technical Stack</b> - Python, TensorFlow, pandas, PyCharm<br><br></p>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="work_overlay">-->
+<!--                                    <h6>The aim of this project is to develop analyze serve pattern of a tennis player in different situations and predict the next serve of that player in real-time</h6>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div id="project_description5" class="white-popup mfp-hide">-->
+<!--                                <h4>Serve prediction for Multiple players in Tennis</h4>-->
+<!--                                <p><b>Dates:</b> August 2019 – Present</p>-->
+<!--                                <p><b>Description:</b> The aim of this project is to develop analyze serve pattern of a tennis player in different situations and predict the next serve of that player in real-time</p>-->
+<!--                                <p><b>Technical Stack:</b> - Python, TensorFlow, pandas, PyCharm</p>-->
+<!--&lt;!&ndash;                                <p><b>GitHub:</b> <a href="">Repository</a> </p>&ndash;&gt;-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
                     <div class="col-lg-4 wd">
                         <div class="work_img_box rounded">
                             <a class="img-zoom" href="#project_description6"></a>
@@ -531,7 +557,7 @@
                                     <div class="service-content mt-4">
                                         <h5 class="font-weight-bold">Travel Tales</h5>
                                         <p class="mt-3 text-muted mb-0">04/2019 – 05/2019</p>
-                                        <p class="mt-3 text-muted mb-0"><b>Technical Stack</b> - HTML, CSS, Bootstrap 4, JavaScript, php, SQL, PyCharm<br><br><br></p>
+                                        <p class="mt-3 text-muted mb-0"><b>Technical Stack</b> - HTML, CSS, Bootstrap 4, JavaScript, PHP, SQL, PyCharm<br><br><br></p>
                                     </div>
                                 </div>
                                 <div class="work_overlay">
@@ -542,8 +568,200 @@
                                 <h4>Travel Tales</h4>
                                 <p><b>Dates:</b> April 2019 – May 2019</p>
                                 <p><b>Description:</b>  This is a multi-purpose travel website which has options to book flights, rental cars and pre-paid car parking</p>
-                                <p><b>Technical Stack:</b> - HTML, CSS, Bootstrap 4, JavaScript, php, SQL, PyCharm</p>
-                                <p><b>GitHub:</b> <a href="">Repository</a> </p>
+                                <p><b>Technical Stack:</b> - HTML, CSS, Bootstrap 4, JavaScript, PHP, SQL, PyCharm</p>
+                                <p><b>GitHub:</b> <a href="https://github.com/maddineniakhil/Web-Development/tree/master/Travel%20Tales" target="_blank">Repository</a> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wd">
+                        <div class="work_img_box rounded">
+                            <a class="img-zoom" href="#project_description7"></a>
+                            <div class="work_images">
+                                <div class="lan_box_ser text-center rounded p-4 mt-3">
+                                    <div class="service-content mt-4">
+                                        <h5 class="font-weight-bold">The Fifteen Puzzle</h5>
+                                        <p class="mt-3 text-muted mb-0">03/2019 – 04/2019</p>
+                                        <p class="mt-3 text-muted mb-0"><b>Technical Stack</b> - HTML, CSS, JavaScript, PyCharm<br><br><br></p>
+                                    </div>
+                                </div>
+                                <div class="work_overlay">
+                                    <h6>The aim of this project is build an interactive website where the user can play Fifteen puzzle game</h6>
+                                </div>
+                            </div>
+                            <div id="project_description7" class="white-popup mfp-hide">
+                                <h4>The Fifteen Puzzle</h4>
+                                <p><b>Dates:</b> March 2019 – April 2019</p>
+                                <p><b>Description:</b>  The Fifteen Puzzle has been around for over a hundred years, and has been a craze for almost every generation. The basic form is of a 4 by 4 grid usually made with sliding tiles in a tray. There are 15 tiles numbered 1 to 15 and the 16th place is empty as shown. Before play begins the tiles are randomly scrambled by sliding to any starting position. The object of the game is then to unscramble the tiles (by sliding, not lifting them) to get them into consecutive order, with the space in the bottom right again. (This will be referred to as the home position)</p>
+                                <p><b>Technical Stack:</b> - HTML, CSS, JavaScript, PyCharm</p>
+                                <p><b>GitHub:</b> <a href="https://github.com/maddineniakhil/Web-Development/tree/master/The%20Fifteen%20Puzzle" target="_blank">Repository</a> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wd">
+                        <div class="work_img_box rounded">
+                            <a class="img-zoom" href="#project_description8"></a>
+                            <div class="work_images">
+                                <div class="lan_box_ser text-center rounded p-4 mt-3">
+                                    <div class="service-content mt-4">
+                                        <h5 class="font-weight-bold">Memory Game</h5>
+                                        <p class="mt-3 text-muted mb-0">02/2019 – 03/2019</p>
+                                        <p class="mt-3 text-muted mb-0"><b>Technical Stack</b> - HTML, CSS, JavaScript, PyCharm<br><br><br></p>
+                                    </div>
+                                </div>
+                                <div class="work_overlay">
+                                    <h6>The aim of this project is build an interactive website where the user can play games that test user's memory</h6>
+                                </div>
+                            </div>
+                            <div id="project_description8" class="white-popup mfp-hide">
+                                <h4>Memory Game</h4>
+                                <p><b>Dates:</b> February 2019 – March 2019</p>
+                                <p><b>Description:</b> The aim of this project is build an interactive website where the user can play games that test user's memory power. This project contains Number guessing and Card Matching games.</p>
+                                <p><b>Technical Stack:</b> - HTML, CSS, JavaScript, PyCharm</p>
+                                <p><b>GitHub:</b> <a href="https://github.com/maddineniakhil/Web-Development/tree/master/Memory%20Game" target="_blank">Repository</a> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wd">
+                        <div class="work_img_box rounded">
+                            <a class="img-zoom" href="#project_description9"></a>
+                            <div class="work_images">
+                                <div class="lan_box_ser text-center rounded p-4 mt-3">
+                                    <div class="service-content mt-4">
+                                        <h5 class="font-weight-bold">FLAMES</h5>
+                                        <p class="mt-3 text-muted mb-0">02/2019 – 03/2019</p>
+                                        <p class="mt-3 text-muted mb-0"><b>Technical Stack</b> - HTML, CSS, PHP, PyCharm<br><br><br></p>
+                                    </div>
+                                </div>
+                                <div class="work_overlay">
+                                    <h6>The aim of this project is recreate the Flames game</h6>
+                                </div>
+                            </div>
+                            <div id="project_description9" class="white-popup mfp-hide">
+                                <h4>FLAMES</h4>
+                                <p><b>Dates:</b> February 2019 – March 2019</p>
+                                <p><b>Description:</b> F L A M E S is a game named after the acronym: Friendship, Love, Affection, Marriage, Enemity, Sibblings. It is a popular game among young girls at sleepovers, especially with pre-teens and teens who are beginning to explore the world of crushes. This game does not accurately predict whether or not an individual is right for you, but it can be fun to play this with your friends. <br>It is a fun filled love calculator to test the status of your love relationship between him/her using FLAMES. Asimple test of love using only names of people.</p>
+                                <p><b>Technical Stack:</b> - HTML, CSS, PHP, PyCharm</p>
+                                <p><b>GitHub:</b> <a href="https://github.com/maddineniakhil/Web-Development/tree/master/Flames" target="_blank">Repository</a> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 bd">
+                        <div class="work_img_box rounded">
+                            <a class="img-zoom" href="#project_description10"></a>
+                            <div class="work_images">
+                                <div class="lan_box_ser text-center rounded p-4 mt-3">
+                                    <div class="service-content mt-4">
+                                        <h5 class="font-weight-bold">Spark Recommendation System</h5>
+                                        <p class="mt-3 text-muted mb-0">10/2018 – 11/2018</p>
+                                        <p class="mt-3 text-muted mb-0"><b>Technical Stack</b> - Apache Spark, Java, Recommender system<br><br></p>
+                                    </div>
+                                </div>
+                                <div class="work_overlay">
+                                    <h6>The aim of this project is design a system to recommend closest document to the input document</h6>
+                                </div>
+                            </div>
+                            <div id="project_description10" class="white-popup mfp-hide">
+                                <h4>Spark Recommendation System</h4>
+                                <p><b>Dates:</b> October 2018 – November 2018</p>
+                                <p><b>Description:</b> The aim of this project is design a system to recommend closest document to the input document.</p>
+                                <p><b>Technical Stack:</b> - Apache Spark, Java, Recommender system</p>
+                                <p><b>GitHub:</b> <a href="https://github.com/maddineniakhil/BigData/blob/master/Hadoop_Spark_Assignments/SparkRecommendationSystem.java" target="_blank">Repository</a> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 bd">
+                        <div class="work_img_box rounded">
+                            <a class="img-zoom" href="#project_description12"></a>
+                            <div class="work_images">
+                                <div class="lan_box_ser text-center rounded p-4 mt-3">
+                                    <div class="service-content mt-4">
+                                        <h5 class="font-weight-bold">Spark MinHash</h5>
+                                        <p class="mt-3 text-muted mb-0">10/2018 – 11/2018</p>
+                                        <p class="mt-3 text-muted mb-0"><b>Technical Stack</b> - Apache Spark, Java, Locality sensitive hashing(LSH), MinHash<br><br><br></p>
+                                    </div>
+                                </div>
+                                <div class="work_overlay">
+                                    <h6>The aim of this project is to find similarity between two documents using MinHash technique</h6>
+                                </div>
+                            </div>
+                            <div id="project_description12" class="white-popup mfp-hide">
+                                <h4>SparkMinHash</h4>
+                                <p><b>Dates:</b> October 2018 – November 2018</p>
+                                <p><b>Description:</b> MinHash (or the min-wise independent permutations locality sensitive hashing scheme) is a technique for quickly estimating how similar two sets are. </p>
+                                <p><b>Technical Stack:</b> - Apache Spark, Java, Locality sensitive hashing(LSH), MinHash</p>
+                                <p><b>GitHub:</b> <a href="https://github.com/maddineniakhil/BigData/blob/master/Hadoop_Spark_Assignments/SparkMinHash_DocumentSimilarity.java" target="_blank">Repository</a> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 bd">
+                        <div class="work_img_box rounded">
+                            <a class="img-zoom" href="#project_description13"></a>
+                            <div class="work_images">
+                                <div class="lan_box_ser text-center rounded p-4 mt-3">
+                                    <div class="service-content mt-4">
+                                        <h5 class="font-weight-bold">Frequent Pattern Mining and Association Rules</h5>
+                                        <p class="mt-3 text-muted mb-0">09/2018 – 10/2018</p>
+                                        <p class="mt-3 text-muted mb-0"><b>Technical Stack</b> - Apache Spark, Java, FP Growth, Association Rule Mining<br><br></p>
+                                    </div>
+                                </div>
+                                <div class="work_overlay">
+                                    <h6>The aim of this project is to mine Frequent patterns and Association rules in a dataset</h6>
+                                </div>
+                            </div>
+                            <div id="project_description13" class="white-popup mfp-hide">
+                                <h4>Frequent Pattern Mining and Association Rules</h4>
+                                <p><b>Dates:</b> September 2018 – October 2018</p>
+                                <p><b>Description:</b> Frequent patterns in a dataset are identified using FP Growth Algorithm, method for mining the complete set of frequent patterns by pattern fragment growth, using an extended prefix-tree structure for storing compressed and crucial information about frequent patterns named frequent-pattern tree (FP tree).</p>
+                                <p><b>Technical Stack:</b> - Apache Spark, Java, FP Growth, Association Rule Mining</p>
+                                <p><b>GitHub:</b> <a href="https://github.com/maddineniakhil/BigData/blob/master/Hadoop_Spark_Assignments/FPGrowth_AssosciationRules.java" target="_blank">Repository</a> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 bd">
+                        <div class="work_img_box rounded">
+                            <a class="img-zoom" href="#project_description14"></a>
+                            <div class="work_images">
+                                <div class="lan_box_ser text-center rounded p-4 mt-3">
+                                    <div class="service-content mt-4">
+                                        <h5 class="font-weight-bold">Spark Naive Bayes</h5>
+                                        <p class="mt-3 text-muted mb-0">09/2018 – 10/2018</p>
+                                        <p class="mt-3 text-muted mb-0"><b>Technical Stack</b> - Apache Spark, spark.ml, Java, Naive Bayes, Text Classification<br><br></p>
+                                    </div>
+                                </div>
+                                <div class="work_overlay">
+                                    <h6>The aim of this project is to design a naive bayes classifier to classify the input text into categories</h6>
+                                </div>
+                            </div>
+                            <div id="project_description14" class="white-popup mfp-hide">
+                                <h4>Spark Naive Bayes</h4>
+                                <p><b>Dates:</b> September 2018 – October 2018</p>
+                                <p><b>Description:</b> Naive Bayes is a simple multiclass classification algorithm with the assumption of independence between every pair of features. The input text file is first filtered of Stop words and then fed to Naive Bayes classifier.</p>
+                                <p><b>Technical Stack:</b> - Apache Spark, spark.ml, Java, Naive Bayes, Text Classification</p>
+                                <p><b>GitHub:</b> <a href="https://github.com/maddineniakhil/BigData/blob/master/Hadoop_Spark_Assignments/Spark_NaiveBayes.java" target="_blank">Repository</a> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 bd">
+                        <div class="work_img_box rounded">
+                            <a class="img-zoom" href="#project_description15"></a>
+                            <div class="work_images">
+                                <div class="lan_box_ser text-center rounded p-4 mt-3">
+                                    <div class="service-content mt-4">
+                                        <h5 class="font-weight-bold">Hadoop Matrix Partitioner</h5>
+                                        <p class="mt-3 text-muted mb-0">08/2018 – 09/2018</p>
+                                        <p class="mt-3 text-muted mb-0"><b>Technical Stack</b> - Apache Hadoop, MapReduce, Java<br><br><br></p>
+                                    </div>
+                                </div>
+                                <div class="work_overlay">
+                                    <h6>The aim of this project is to partition a matrix into sub matrices</h6>
+                                </div>
+                            </div>
+                            <div id="project_description15" class="white-popup mfp-hide">
+                                <h4>Hadoop Matrix Partitioner</h4>
+                                <p><b>Dates:</b> August 2018 – September 2018</p>
+                                <p><b>Description:</b> This project is designed to divide a matrix into compatible smaller matrices for ease of computation. Partitioning is useful when applied to large matrices because manipulations can be carried out on the smaller blocks.</p>
+                                <p><b>Technical Stack:</b> - Apache Hadoop, MapReduce, Java</p>
+                                <p><b>GitHub:</b> <a href="https://github.com/maddineniakhil/BigData/blob/master/Hadoop_Spark_Assignments/Matrix%20Partitioner.java" target="_blank">Repository</a> </p>
                             </div>
                         </div>
                     </div>
@@ -575,9 +793,9 @@
 <!--                                    <i class="mbri-user"></i>                                -->
 <!--                                </div>-->
 <!--                                <div class="people_review_box mt-4">-->
-<!--                                    <p class="people_name text-white h5 font-weight-bold mb-0">Kike</p>-->
-<!--                                    <p class="h6">Google</p>-->
-<!--                                    <p class="people_review text-white mx-auto pt-3 mb-0">" The most well-known dummy text is the 'Lorem Ipsum', which is said originated the 16th century. This ancient dummy text is also  incomprehensible, of most European in Latin script."</p>-->
+<!--                                    <p class="people_name text-white h5 font-weight-bold mb-0"></p>-->
+<!--                                    <p class="h6"></p>-->
+<!--                                    <p class="people_review text-white mx-auto pt-3 mb-0"></p>-->
 <!--                                </div>-->
 <!--                            </div>-->
 <!--                            <div class="text-white people_says text-center">-->
@@ -585,9 +803,9 @@
 <!--                                    <i class="mbri-user"></i>                                -->
 <!--                                </div>-->
 <!--                                <div class="people_review_box mt-4">-->
-<!--                                    <p class="people_name text-white h5 font-weight-bold mb-0">Edward Evans</p>-->
-<!--                                    <p class="h6">Google</p>-->
-<!--                                    <p class="people_review text-white mx-auto pt-3 mb-0">" The most well-known dummy text is the 'Lorem Ipsum', which is said originated the 16th century. This ancient dummy text is also  incomprehensible, of most European in Latin script."</p>-->
+<!--                                    <p class="people_name text-white h5 font-weight-bold mb-0"></p>-->
+<!--                                    <p class="h6"></p>-->
+<!--                                    <p class="people_review text-white mx-auto pt-3 mb-0"></p>-->
 <!--                                </div>-->
 <!--                            </div>-->
 <!--                            <div class="text-white people_says text-center">-->
@@ -595,9 +813,9 @@
 <!--                                    <i class="mbri-user"></i>                                -->
 <!--                                </div>-->
 <!--                                <div class="people_review_box mt-4">-->
-<!--                                    <p class="people_name text-white h5 font-weight-bold mb-0">Antonio Hernandez</p>-->
-<!--                                    <p class="h6">Google</p>-->
-<!--                                    <p class="people_review text-white mx-auto pt-3 mb-0">" The most well-known dummy text is the 'Lorem Ipsum', which is said originated the 16th century. This ancient dummy text is also  incomprehensible, of most European in Latin script."</p>-->
+<!--                                    <p class="people_name text-white h5 font-weight-bold mb-0"></p>-->
+<!--                                    <p class="h6"></p>-->
+<!--                                    <p class="people_review text-white mx-auto pt-3 mb-0"></p>-->
 <!--                                </div>-->
 <!--                            </div>-->
 <!--                        </div>-->
@@ -645,24 +863,24 @@
                     </div>
                     <div class="col-lg-8">
                         <div class="contact_form">
-                            <form>
+                            <form method="post">
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="form-group mt-2">
                                             <label for="name" class="font-weight-bold">Name</label>
-                                            <input name="name" id="name" type="text" class="form-control" placeholder="Your name..." required="">
+                                            <input name="name" id="name" type="text" class="form-control" placeholder="Your name..." required="required"/>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group mt-2">
                                             <label for="email" class="font-weight-bold">Email address</label>
-                                            <input name="email" id="email" type="email" class="form-control" placeholder="Your email..."  required="">
+                                            <input name="email" id="email" type="email" class="form-control" placeholder="Your email..."  required="required"/>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="form-group mt-2">
                                             <label for="subject" class="font-weight-bold">Subject</label>
-                                            <input type="text" class="form-control" id="subject" placeholder="Your Subject.."  required=""/>
+                                            <input type="text" class="form-control" id="subject" placeholder="Your Subject.."  required="required"/>
                                         </div>
                                     </div>
                                 </div>
@@ -670,13 +888,13 @@
                                     <div class="col-lg-12">
                                         <div class="form-group mt-2">
                                             <label for="comments" class="font-weight-bold">Message</label>
-                                            <textarea name="comments" id="comments" rows="4" class="form-control" placeholder="Your message..." required=""></textarea>
+                                            <textarea name="comments" id="comments" rows="4" class="form-control" placeholder="Your message..." required="required"></textarea>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-12 text-right">
-                                        <input type="submit" class="btn btn-custom" value="Send Message" onclick="sendMail(); return false">
+                                        <input class="btn btn-custom" type="submit" value="Send Message" onclick="sendMail(); return false"/>
                                     </div>
                                 </div>
                             </form>
@@ -731,7 +949,7 @@
         <script src="js/custom.js"></script>
         <script>
             $(".element").each(function() {
-                var $this = $(this)s;
+                var $this = $(this);
                 $this.typed({
                     strings: $this.attr('data-elements').split(','),
                     typeSpeed: 100,
