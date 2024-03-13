@@ -614,7 +614,8 @@ button:focus {
 
 .skills {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 
 .skills div {
@@ -624,6 +625,10 @@ button:focus {
   color: white;
   padding: 5px 10px;
   border-radius: 6%;
+}
+
+#skills{
+    background-color: #e9ecf0;
 }
 
 /*==========================
